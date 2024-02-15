@@ -1,0 +1,79 @@
+{
+  "icons": [
+    {
+      "src": "img/favicons/16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "img/favicons/32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "img/favicons/96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/favicons/android-36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "img/favicons/android-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/favicons/android-72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "img/favicons/android-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/favicons/android-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "img/favicons/android-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicons/apple-57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "img/favicons/apple-60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "img/favicons/apple-76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "img/favicons/apple-114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "img/favicons/apple-152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "img/favicons/apple-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}
