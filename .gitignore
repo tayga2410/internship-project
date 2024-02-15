@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+source
 backstop_data
 .cache
 *.local
@@ -29,4 +30,3 @@ convert-rastr.js
 *.njsproj
 *.sln
 *.sw?
-source
