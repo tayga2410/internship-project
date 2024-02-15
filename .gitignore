@@ -8,11 +8,16 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 backstop_data
 .cache
 *.local
 package-lock.json
+.htmlvalidate.cjs
+.linhtmlrc
+.ls-lint.yml
+.stylelintrc.cjs
+convert-rastr.js
+
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +29,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+source
