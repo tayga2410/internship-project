@@ -1,0 +1,182 @@
+.features {
+  background-color: #316dc2;
+  color: $color-default-white;
+  padding: 72px 106px 32px 126px;
+  border-radius: 20px;
+
+  @include vp-1439 {
+    padding: 62px 40px 40px 60px;
+  }
+
+  @include vp-767 {
+    padding: 42px 20px 40px 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+    margin: 0;
+    padding: 0;
+
+    @include vp-1439 {
+      gap: 42px 50px;
+    }
+
+    @include vp-767 {
+      gap: 22px;
+    }
+  }
+}
+
+.features__list-item {
+  padding: 25px 50px 26px 60px;
+  position: relative;
+  border: 1px solid $color-default-beige;
+  border-radius: 16px;
+  z-index: 1;
+  display: flex;
+  width: 478px;
+  min-height: 132px;
+  gap: 24px;
+
+  @include vp-1439 {
+    width: 264px;
+    padding: 30px 7px 25px 29px;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  @include vp-767 {
+    padding: 19px 16px 23px 19px;
+    gap: 4px;
+    min-height: 128px;
+  }
+
+  h4 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    padding: 5px 0 0;
+    max-width: 171px;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      padding: 0;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.16px;
+      max-width: 214px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+    background-color: $color-default-blue;
+
+    @include vp-1439 {
+      top: -23px;
+      left: -21px;
+    }
+
+    @include vp-767 {
+      top: -20px;
+      left: -20px;
+      width: 39px;
+      height: 35px;
+    }
+  }
+
+  &--third-block {
+    padding: 25px 46px 26px 59px;
+    gap: 34px;
+
+    @include vp-1439 {
+      padding: 30px 32px 25px 29px;
+      gap: 7px;
+    }
+
+    @include vp-767 {
+      padding: 19px 16px 18px 19px;
+      gap: 4px;
+    }
+  }
+
+  &--forth-block {
+    gap: 53px;
+
+    @include vp-1439 {
+      gap: 7px;
+    }
+
+    @include vp-767 {
+      gap: 4px;
+    }
+  }
+}
+
+.features__line-breaker-2,
+.features__line-breaker-5,
+.features__line-breaker-8,
+.features__line-breaker-9 {
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.features__line-breaker-1,
+.features__line-breaker-6,
+.features__line-breaker-7 {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.features__line-breaker-4,
+.features__line-breaker-5 {
+  @include vp-1439 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.features__title-line-breaker {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.features__title-line-breaker-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}

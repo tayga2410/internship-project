@@ -1,0 +1,223 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $color-default-blue;
+  padding: 0 106px;
+
+  @include vp-1439 {
+    padding: 0;
+  }
+}
+
+.accordion__element {
+  border-radius: 16px;
+  border: 1px solid $color-default-blue;
+}
+
+.accordion__element.is-active {
+  background-color: $color-default-blue;
+  color: $color-default-white;
+  padding: 0 0 32px;
+
+  @include vp-1439 {
+    padding: 0 0 25px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 14px;
+  }
+
+  &:active {
+    background-color: #275699;
+  }
+}
+
+.accordion__button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  color: $color-default-blue;
+  border: none;
+  padding: 38px 40px 40px 39px;
+  position: relative;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  @include vp-1439 {
+    padding: 29px;
+  }
+
+  @include vp-767 {
+    padding: 19px 14px;
+    border-radius: 14px;
+  }
+
+  &::after {
+    content: "+";
+    color: $color-default-white;
+    background-color: $color-default-blue;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  span {
+    text-align: start;
+    font-weight: 400;
+    line-height: 34px;
+    max-width: 600px;
+
+    @include vp-1439 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      max-width: 475px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 18px;
+      max-width: 188px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: #275699;
+  }
+}
+
+.accordion__button:hover::after,
+.accordion__button:focus::after {
+  background-color: $color-default-white;
+  color: $color-default-blue;
+  border: 1px solid $color-default-blue;
+}
+
+.accordion__button:active::after {
+  background-color: #275699;
+  color: $color-default-white;
+  border: 1px solid $color-default-blue;
+}
+
+.accordion__element.is-active .accordion__button {
+  color: $color-default-white;
+  background-color: $color-default-blue;
+  padding: 39px 40px 13px 39px;
+
+  @include vp-1439 {
+    padding: 29px 29px 16px;
+  }
+
+  @include vp-767 {
+    padding: 19px 14px 15px;
+  }
+}
+
+.accordion__element.is-active .accordion__button:hover,
+.accordion__element.is-active .accordion__button:focus {
+  background-color: $color-default-blue;
+}
+
+.accordion__element.is-active .accordion__button:active {
+  background-color: #275699;
+}
+
+.accordion__element.is-active .accordion__button::after {
+  content: "-";
+  color: $color-default-blue;
+  background-color: $color-default-white;
+}
+
+.accordion__element.is-active .accordion__button:hover::after,
+.accordion__element.is-active .accordion__button:focus::after {
+  background-color: transparent;
+  color: $color-default-white;
+  border: 1px solid $color-default-white;
+}
+
+.accordion__element.is-active .accordion__button:active::after {
+  background-color: $color-default-white;
+  color: $color-default-blue;
+  border: 1px solid $color-default-blue;
+}
+
+.accordion__wrapper {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 40px;
+    max-width: 775px;
+
+    @include vp-1439 {
+      line-height: 20px;
+      padding: 0 29px;
+      max-width: 640px;
+    }
+
+    @include vp-767 {
+      padding: 0 14px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+
+.accordion__button--modified {
+  padding: 31px 40px 33px 39px;
+
+  @include vp-1439 {
+    padding: 24px 29px;
+  }
+
+  @include vp-767 {
+    padding: 19px 14px;
+  }
+}
+
+.accordion__line-breaker-1 {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+}
+
+.accordion__line-breaker-2 {
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.accordion__line-breaker-3,
+.accordion__line-breaker-4 {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.accordion__heading-breaker {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}

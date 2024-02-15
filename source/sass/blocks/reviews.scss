@@ -1,0 +1,346 @@
+.reviews__container {
+  padding-top: 4px;
+  margin-bottom: 121px;
+  position: relative;
+
+  @include vp-1439 {
+    padding: 0 0 0 45px;
+    margin-bottom: 104px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-top: 41px;
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    color: $color-default-blue;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0 0 46px 3px;
+
+    @include vp-1439 {
+      font-size: 34px;
+      line-height: 50px;
+      margin: -4px 0 40px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 0 31px;
+      padding: 3px 0 0;
+    }
+  }
+}
+
+.reviews__swiper {
+  position: relative;
+  padding: 0 0 60px;
+
+  @include vp-1439 {
+    padding: 0 0 62px;
+  }
+
+  @include vp-767 {
+    position: static;
+    padding: 0;
+  }
+}
+
+.reviews__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 49px 50px 44px;
+  max-width: 604px;
+  min-height: 456px;
+  border: 1px solid $color-default-blue;
+  border-radius: 16px;
+
+  @include vp-1439 {
+    max-width: 560px;
+    min-height: 395px;
+    padding: 49px 49px 45px;
+  }
+
+  @include vp-767 {
+    padding: 30px 14px 25px;
+    min-height: 435px;
+  }
+}
+
+.reviews__heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: start;
+    gap: 13px;
+  }
+}
+
+.reviews__person-info {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  @include vp-767 {
+    gap: 10px;
+  }
+
+  h3 {
+    color: $color-default-blue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  img {
+    flex-shrink: 0;
+    width: 90px;
+    height: 90px;
+
+    @include vp-767 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.reviews__details-container {
+  display: flex;
+  gap: 25px;
+
+  @include vp-1439 {
+    padding: 2px 0 0;
+  }
+}
+
+.reviews__details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 126px;
+
+  h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    color: $color-default-blue;
+    margin: 0;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+      opacity: 0.9;
+    }
+  }
+}
+
+.reviews__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @include vp-1439 {
+    gap: 16px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
+  }
+
+  p {
+    color: $color-default-blue;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  p + p {
+    color: $color-default-black;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 479px;
+    margin: 0;
+
+    @include vp-1439 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.reviews__swiper-button-wrapper {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  bottom: 0;
+  right: 0;
+  width: 54px;
+  min-height: 22px;
+
+  @include vp-1439 {
+    right: 45px;
+  }
+
+  @include vp-767 {
+    top: 0;
+    max-height: 22px;
+    right: 14px;
+  }
+}
+
+.reviews__button-prev,
+.reviews__button-next {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: unset;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin-top: unset;
+  top: unset;
+
+  &::after {
+    font-family: unset;
+    font-size: 0;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.reviews__button-prev:hover,
+.reviews__button-next:hover,
+.reviews__button-prev:focus,
+.reviews__button-next:focus,
+.reviews__button-prev:active,
+.reviews__button-next:active {
+  svg {
+    background-color: $color-default-white;
+    color: $color-default-blue;
+    border-radius: 30px;
+  }
+}
+
+.reviews__button-prev:disabled,
+.reviews__button-next:disabled {
+  svg {
+    background-color: transparent;
+    color: #a9afb7;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
+}
+
+.reviews__button-prev {
+  left: 0;
+}
+
+.reviews__button-next {
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.reviews__line-breaker-0 {
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.reviews__line-breaker-1,
+.reviews__line-breaker-2 {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.reviews__line-breaker-3,
+.reviews__line-breaker-4 {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+
+.reviews__swiper .swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 1134px;
+  height: 2px;
+  background-color: rgba(49, 109, 194, 0.2);
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+
+  @include vp-1439 {
+    width: 560px;
+    bottom: 9px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.reviews__swiper .swiper-scrollbar-drag {
+  position: relative;
+  height: 2px;
+  background: $color-default-blue;
+  left: 0;
+  opacity: 1;
+
+  @include vp-767 {
+    display: none;
+  }
+}
